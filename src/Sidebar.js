@@ -1,4 +1,3 @@
-import { Avatar } from '@material-ui/core';
 import { Chat, EmojiFlags, ExpandMoreOutlined, LocalHospital, People, Storefront, VideoLibrary } from '@material-ui/icons';
 import React from 'react';
 import "./Sidebar.css";
@@ -7,7 +6,7 @@ import { useStateValue } from './StateProvider';
 
 function Sidebar() {
 
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
 
     return (
         <div className="sidebar">
@@ -16,12 +15,12 @@ function Sidebar() {
             title={user.displayName}
             />
             <SidebarRow Icon={LocalHospital} title="COVID-19 Information Center"/>
-           <SidebarRow Icon ={EmojiFlags} title="Pages"/>
-           <SidebarRow Icon={People} title="Friends"/>
-           <SidebarRow Icon={Chat} title="Messenger"/>
-           <SidebarRow Icon={Storefront} title="Marketplace"/>
-           <SidebarRow Icon={VideoLibrary} title="Videos"/>
-           <SidebarRow Icon={ExpandMoreOutlined} title="Marketplace"/>
+            <SidebarRow Icon ={EmojiFlags} title="Pages"/>
+            <SidebarRow Icon={People} title="Friends"/>
+            <SidebarRow Icon={Chat} title="Messenger"/>
+            <SidebarRow Icon={Storefront} title="Marketplace"/>
+            <SidebarRow Icon={VideoLibrary} title="Videos"/>
+            <SidebarRow Icon={ExpandMoreOutlined} title="Marketplace"/>
         </div>
     )
 }

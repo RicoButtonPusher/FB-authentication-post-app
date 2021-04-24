@@ -1,4 +1,3 @@
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import firebase from "firebase";
 
 const firebaseConfig = {
@@ -18,4 +17,3 @@ const firebaseConfig = {
 
   export { auth, provider }
   export default db;
-  //will need this later obviously

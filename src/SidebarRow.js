@@ -13,13 +13,3 @@ function SidebarRow({src, Icon, title}) {
 }
 
 export default SidebarRow;
-
-
-// function SidebarRow(props) {
-//     return (
-//         <div className="sidebarRow">
-//             {props.src && <Avatar src={props.src}/>}
-//             {/* {props.Icon && <Icon />} */}
-//            <h4>{props.title}</h4> 
-//         </div>
-//     )

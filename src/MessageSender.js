@@ -4,10 +4,10 @@ import React, {useState} from 'react'
 import "./MessageSender.css"
 import { useStateValue } from './StateProvider';
 import db from "./firebase"
-import firebase from "firebase"
+import firebase from "firebase";
 
 function MessageSender() {
-    const [{ user }, dispatch] = useStateValue();
+    const [{ user }] = useStateValue();
 
     const [input, setInput] = useState('');
     const [imageURL, setImageURL] = useState('');
@@ -43,7 +43,7 @@ function MessageSender() {
                     <input 
                     value={imageURL}
                     onChange={e => setImageURL(e.target.value)}
-                    placeholder="image URL (Optional)"
+                    placeholder="URL Image (Optional)"
                     />
                     <button onClick={handleSubmit} type="submit">
                     Hidden Submit
